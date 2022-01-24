@@ -1,0 +1,119 @@
+POST http://localhost:8080/file/concertApplication
+Content-Type: application/json
+A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxMDgzNjcsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.rz_DOyQZB6mbu7pIqnmxJS1MI5_zkMmAUv280cIRn28
+
+{
+  "institute" : "ITIS",
+  "concertDate" : "06.10.2021",
+  "cultorgName" : "Анна",
+  "cultorgSurname" : "Будревич",
+  "cultorgPatronymic" : "Дмитриевна",
+  "cultorgClass" : "11-901",
+  "cultorgPhone" : "89534014606",
+  "producerName" : "Даниял",
+  "producerSurname" : "Салахов",
+  "producerPatronymic" : "Ильдарович",
+  "producerClass" : "11-001",
+  "producerPhone" : "88005553535",
+  "deputyName" : "Айсылу",
+  "deputySurname" : "Бакирова",
+  "deputyPatronymic" : "Наримовна",
+  "deputyPhone" : "88005555555",
+  "dateInTheSmallHall" : "05.10.2021",
+  "timeInTheSmallHall" : "16:00-21:00",
+  "dateInTheBigHall" : "06.10.2021",
+  "timeInTheBigHall" : "7:00-10:00"
+}
+
+###
+
+POST http://localhost:8080/file/nightSetup
+Content-Type: application/json
+A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxMDgzNjcsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.rz_DOyQZB6mbu7pIqnmxJS1MI5_zkMmAUv280cIRn28
+
+{
+  "institute" : "ITIS",
+  "concertDate" : "06.10.2021",
+  "startDate" : "5.10.2021",
+  "startTime" : "21:00",
+  "finishDate" : "6.10.2021",
+  "finishTime" : "6:00",
+  "cultorgName" : "Анна",
+  "cultorgSurname" : "Будревич",
+  "cultorgPatronymic" : "Дмитриевна",
+  "responsibleName" : "Даниял",
+  "responsibleSurname" : "Салахов",
+  "responsiblePatronymic" : "Ильдарович",
+  "responsiblePhone" : "88005553535",
+  "responsiblePosition" : "Заместитель директора по СВР",
+  "deputyName" : "Айсылу",
+  "deputySurname" : "Бакирова",
+  "deputyPatronymic" : "Наримовна",
+  "instituteInTheGenitive" : "Института информационных технологий и интеллектуальных систем"
+}
+
+###
+
+POST http://localhost:8080/file/concertCostume
+Content-Type: application/json
+A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxMDgzNjcsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.rz_DOyQZB6mbu7pIqnmxJS1MI5_zkMmAUv280cIRn28
+
+{
+  "institute" : "ITIS",
+  "concertDate" : "06.10.2021",
+  "cultorgName" : "Анна",
+  "cultorgSurname" : "Будревич",
+  "cultorgPatronymic" : "Дмитриевна",
+  "deputyName" : "Айсылу",
+  "deputySurname" : "Бакирова",
+  "deputyPatronymic" : "Наримовна"
+}
+
+###
+
+POST http://localhost:8080/file/tehGroup
+Content-Type: application/json
+A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxMDgzNjcsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.rz_DOyQZB6mbu7pIqnmxJS1MI5_zkMmAUv280cIRn28
+
+{
+  "institute" : "ITIS",
+  "startDate" : "5.10.2021",
+  "startTime" : "21:00",
+  "finishDate" : "6.10.2021",
+  "finishTime" : "6:00",
+  "responsibleName" : "Даниял",
+  "responsibleSurname" : "Салахов",
+  "responsiblePatronymic" : "Ильдарович",
+  "responsiblePosition" : "Заместитель директора по СВР",
+  "directorName" : "Айсылу",
+  "directorSurname" : "Бакирова",
+  "directorPatronymic" : "Наримовна",
+  "instituteInTheGenitive" : "Института информационных технологий и интеллектуальных систем",
+  "today" : "22.01.2022"
+}
+
+###
+
+
+POST http://localhost:8080/sign-up
+Content-Type: application/json
+
+{
+  "email" : "budrevichanya@gmail.com",
+  "name" : "Anna",
+  "surname" : "Budrevich",
+  "institute" : "ITIS",
+  "password" : "07072001",
+  "repeatedPassword" : "07072001",
+  "role" : "USER"
+}
+
+###
+
+POST http://localhost:8080/sign-in
+Content-Type: application/json
+
+{
+  "email" : "budrevichanya@gmail.com",
+  "password" : "07072001"
+}
