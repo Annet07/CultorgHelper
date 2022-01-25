@@ -6,8 +6,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import ru.itis.javalab.repository.TokenRepository;
-import ru.itis.javalab.entity.RefreshToken;
+import ru.itis.javalab.entity.User;
+import ru.itis.javalab.service.TokenService;
 
 import java.util.function.Supplier;
 
@@ -15,12 +15,12 @@ import java.util.function.Supplier;
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired
-    private TokenRepository tokenRepository;
+    private TokenService tokenService;
 
     @SneakyThrows
     @Override
     public UserDetails loadUserByUsername(String token) throws UsernameNotFoundException {
-        RefreshToken result = tokenRepository.findByRefreshToken(token).orElseThrow((Supplier<Throwable>) () -> new UsernameNotFoundException("Token not found"));
-        return new UserDetailsImpl(result.getUser());
+        User result = tokenService.getUserByRefreshToken(token).orElseThrow((Supplier<Throwable>) () -> new UsernameNotFoundException("Token not found"));
+        return new UserDetailsImpl(result);
     }
 }

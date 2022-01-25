@@ -1,6 +1,6 @@
 POST http://localhost:8080/file/concertApplication
 Content-Type: application/json
-A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxMDgzNjcsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.rz_DOyQZB6mbu7pIqnmxJS1MI5_zkMmAUv280cIRn28
+A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxNzQwMzAsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.14CgYEqReTRkppuSqCeie2pfw8xBNkDQaC5xxz4dFH8
 
 {
   "institute" : "ITIS",
@@ -29,7 +29,7 @@ A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLC
 
 POST http://localhost:8080/file/nightSetup
 Content-Type: application/json
-A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxMDgzNjcsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.rz_DOyQZB6mbu7pIqnmxJS1MI5_zkMmAUv280cIRn28
+A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxNjk4ODYsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.ozzeM-8GM-fk-5R8OJdyXjCWWC8scEmKCndhi_lvW7E
 
 {
   "institute" : "ITIS",
@@ -56,7 +56,7 @@ A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLC
 
 POST http://localhost:8080/file/concertCostume
 Content-Type: application/json
-A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxMDgzNjcsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.rz_DOyQZB6mbu7pIqnmxJS1MI5_zkMmAUv280cIRn28
+A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxNjk4ODYsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.ozzeM-8GM-fk-5R8OJdyXjCWWC8scEmKCndhi_lvW7E
 
 {
   "institute" : "ITIS",
@@ -73,7 +73,7 @@ A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLC
 
 POST http://localhost:8080/file/tehGroup
 Content-Type: application/json
-A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxMDgzNjcsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.rz_DOyQZB6mbu7pIqnmxJS1MI5_zkMmAUv280cIRn28
+A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxNjk4ODYsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.ozzeM-8GM-fk-5R8OJdyXjCWWC8scEmKCndhi_lvW7E
 
 {
   "institute" : "ITIS",
@@ -93,7 +93,6 @@ A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLC
 }
 
 ###
-
 
 POST http://localhost:8080/sign-up
 Content-Type: application/json
@@ -117,3 +116,20 @@ Content-Type: application/json
   "email" : "budrevichanya@gmail.com",
   "password" : "07072001"
 }
+
+###
+
+POST http://localhost:8080/update
+Content-Type: application/json
+A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxNDQ3MjYsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.Ni-VD9eY3tYALyad_JZjTmgaYirReNnc_V2KIwWMpFA
+R-TOKEN: 70e3513c-e38a-4136-b7f2-1f1baf6d05c6
+
+###
+
+POST http://localhost:8080/users/1/block
+A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxNDk1MDIsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.TxvLtXind-L-LzrlKHnX511HnF1-QwfVIdgr9tFZPak
+
+###
+
+GET http://localhost:8080/logout
+A-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwia2luZCI6IlVTRVIiLCJleHAiOjE2NDMxNDk2NjEsImVtYWlsIjoiYnVkcmV2aWNoYW55YUBnbWFpbC5jb20ifQ.kkMJt_koOnD6DL7aBoFT3qWFjysfxnpu1a0g4Wy_ctg

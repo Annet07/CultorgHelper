@@ -6,17 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import ru.itis.javalab.dto.TokenDto;
-import ru.itis.javalab.entity.RefreshToken;
 import ru.itis.javalab.entity.Response;
+import ru.itis.javalab.entity.Tokens;
 import ru.itis.javalab.entity.User;
-import ru.itis.javalab.repository.TokenRepository;
-
 import java.util.Date;
 import java.util.Optional;
 import java.util.UUID;
 
 @Service
 public class TokenServiceImpl implements TokenService{
+
+    @Autowired
+    private RedisService redisService;
 
     @Value("${token.secret.key}")
     private String secretKey;
@@ -27,9 +28,6 @@ public class TokenServiceImpl implements TokenService{
     @Value("${token.refresh.lifetime}")
     private Long refreshLifetime;
 
-    @Autowired
-    private TokenRepository tokenRepository;
-
     @Override
     public TokenDto getNewTokens(User user) {
         String accessToken = JWT.create()
@@ -39,22 +37,20 @@ public class TokenServiceImpl implements TokenService{
                 .withExpiresAt(new Date(System.currentTimeMillis()+accessLifeTime))
                 .sign(Algorithm.HMAC256(secretKey));
         String refreshTokenToString = UUID.randomUUID().toString();
-        RefreshToken refreshToken = RefreshToken.builder()
+        Date expiredTimeRefreshToken = new Date(System.currentTimeMillis()+refreshLifetime);
+        redisService.saveTokens(Tokens.builder()
+                .accessToken(accessToken)
                 .refreshToken(refreshTokenToString)
-                .user(user)
-                .expiredTime(new Date(System.currentTimeMillis()+refreshLifetime))
-                .build();
-        Optional<RefreshToken> oldRefreshToken = tokenRepository.findByUser(user);
-        oldRefreshToken.ifPresent(value -> tokenRepository.delete(value));
-        tokenRepository.save(refreshToken);
+                .expiredTimeRefreshToken(expiredTimeRefreshToken)
+                .build(), user);
         return TokenDto.builder().accessToken(accessToken).refreshToken(refreshTokenToString).build();
 
     }
 
     @Override
     public Response updateTokenWithRefresh(String token) {
-        Optional<RefreshToken> refreshToken = tokenRepository.findByRefreshToken(token);
-        if (!refreshToken.isPresent()){
+        Optional<User> user = redisService.deleteTokensAndReturnUser(token);
+        if (!user.isPresent()){
             return Response.builder()
                     .success(false)
                     .response("Данный Refresh Token не найден!")
@@ -62,12 +58,25 @@ public class TokenServiceImpl implements TokenService{
         }
         return Response.builder()
                 .success(true)
-                .response(getNewTokens(refreshToken.get().getUser()))
+                .response(getNewTokens(User.builder()
+                        .institute(user.get().getInstitute())
+                        .role(user.get().getRole())
+                        .surname(user.get().getSurname())
+                        .name(user.get().getName())
+                        .email(user.get().getEmail())
+                        .hashPassword(user.get().getHashPassword())
+                        .id(user.get().getId())
+                        .build()))
                 .build();
     }
 
     @Override
-    public Optional<RefreshToken> getRefreshToken(String refreshToken) {
-        return tokenRepository.findByRefreshToken(refreshToken);
+    public Tokens getRefreshToken(String refreshToken) {
+        return redisService.findByRefreshToken(refreshToken);
+    }
+
+    @Override
+    public Optional<User> getUserByRefreshToken(String refreshToken) {
+        return redisService.findUserByRefreshToken(refreshToken);
     }
 }

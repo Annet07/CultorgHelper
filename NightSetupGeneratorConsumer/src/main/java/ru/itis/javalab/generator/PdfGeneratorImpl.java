@@ -8,6 +8,7 @@ import org.xhtmlrenderer.pdf.ITextRenderer;
 import ru.itis.javalab.model.InfoForNightSetup;
 
 import java.io.*;
+import java.nio.file.Paths;
 import java.util.UUID;
 
 @Component
@@ -19,18 +20,17 @@ public class PdfGeneratorImpl implements PdfGenerator{
     @Override
     public String getPdfFile(InfoForNightSetup infoForNightSetup) throws IOException, DocumentException {
         String name = htmlGenerator.getHtmlFile(infoForNightSetup);
-        String pdfPath = "D:\\IDEA\\App_2021-2022\\NightSetupGeneratorConsumer\\src\\main\\resources\\pdf\\";
-        String htmlFileToString = "D:\\IDEA\\App_2021-2022\\NightSetupGeneratorConsumer\\src\\main\\resources\\html\\" + name + ".html";
-        String pdfFileToString = pdfPath + name + ".pdf";
-        File file = new File(htmlFileToString);
-        String url = file.toURI().toURL().toString();
-        OutputStream out = new FileOutputStream(pdfFileToString);
+        File pdfPath = new File(name + ".pdf");
+        File htmlFile = new File(name + ".html");
+        String url = htmlFile.toURI().toURL().toString();
+        OutputStream out = new FileOutputStream(pdfPath);
         ITextRenderer renderer = new ITextRenderer();
-        renderer.getFontResolver().addFont("D:\\IDEA\\App_2021-2022\\NightSetupGeneratorConsumer\\src\\main\\resources\\fonts\\timesnewromanpsmt.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+        renderer.getFontResolver().addFont(Paths.get("src", "main", "resources", "fonts", "timesnewromanpsmt.ttf").toString(), BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
         renderer.setDocument(url);
         renderer.layout();
         renderer.createPDF(out);
         out.close();
-        return pdfFileToString;
+        renderer.finishPDF();
+        return pdfPath.getAbsolutePath();
     }
 }

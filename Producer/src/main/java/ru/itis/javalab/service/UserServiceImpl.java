@@ -14,6 +14,15 @@ public class UserServiceImpl implements UserService{
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private RedisService redisService;
+
+    @Override
+    public void blockUser(Long userId) {
+        User user = userRepository.findById(userId).orElseThrow(IllegalArgumentException::new);
+        redisService.addAllTokensToBlacklist(user);
+    }
+
     @Override
     public User getUserByEmail(String email) {
         Optional<User> opUser = userRepository.findByEmail(email);

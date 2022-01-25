@@ -3,12 +3,12 @@ package ru.itis.javalab.generator;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
-import freemarker.template.TemplateExceptionHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import ru.itis.javalab.model.InfoForConcertCostume;
 
 import java.io.*;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -21,10 +21,6 @@ public class HtmlGeneratorImpl implements HtmlGenerator{
 
     @Override
     public String getHtmlFile(InfoForConcertCostume infoForConcertCostume) throws IOException {
-        configuration.setDirectoryForTemplateLoading(new File("D:\\IDEA\\App_2021-2022\\ConcertCostumeGeneratorConsumer\\src\\main\\resources\\templates"));
-        configuration.setDefaultEncoding("UTF-8");
-        configuration.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
-
         Template confirmMailTemplate;
         try{
             confirmMailTemplate = configuration.getTemplate("ConcertCostume.ftlh");
@@ -45,7 +41,7 @@ public class HtmlGeneratorImpl implements HtmlGenerator{
         attributes.put("first_letter_deputy_patronymic", firstLetterDeputyPatronymic);
 
         UUID name = UUID.randomUUID();
-        String path = "D:\\IDEA\\App_2021-2022\\ConcertCostumeGeneratorConsumer\\src\\main\\resources\\html\\" + name + ".html";
+        String path = name + ".html";
         Writer writer = new OutputStreamWriter(new FileOutputStream(path));
         try {
             confirmMailTemplate.process(attributes, writer);

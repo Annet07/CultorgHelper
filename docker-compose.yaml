@@ -1,0 +1,170 @@
+version: '3.3'
+
+services:
+
+  producer:
+    image:
+      producer
+    container_name: producer
+    networks:
+      - cloud
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+      - redis
+      - rabbitmq
+    environment:
+      - "SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/cultorg_helper"
+      - "SPRING_DATASOURCE_USERNAME=postgres"
+      - "SPRING_DATASOURCE_PASSWORD=07072001Anya"
+      - "SPRING_REDIS_HOST=redis"
+      - "SPRING_REDIS_PORT=6380"
+      - "RABBIT_HOST=rabbitmq"
+      - "RABBIT_PORT=5672"
+      - "RABBIT_USER=annet"
+      - "RABBIT_PWD=0707Anya"
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: "10m"
+
+  aconsumer:
+    image: application_consumer
+    container_name: application_consumer
+    networks: 
+      - cloud
+    ports:
+      - 85:80
+    depends_on:
+      - database
+      - rabbitmq
+      - producer
+    environment:
+      - "SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/cultorg_helper"
+      - "SPRING_DATASOURCE_USERNAME=postgres"
+      - "SPRING_DATASOURCE_PASSWORD=07072001Anya"
+      - "RABBIT_HOST=rabbitmq"
+      - "RABBIT_PORT=5672"
+      - "RABBIT_USER=annet"
+      - "RABBIT_PWD=0707Anya"
+
+  cconsumer:
+    image: costume_consumer
+    container_name: costume_consumer
+    networks: 
+      - cloud
+    ports:
+      - 86:80
+    depends_on:
+      - database
+      - rabbitmq
+      - producer
+    environment:
+      - "SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/cultorg_helper"
+      - "SPRING_DATASOURCE_USERNAME=postgres"
+      - "SPRING_DATASOURCE_PASSWORD=07072001Anya"
+      - "RABBIT_HOST=rabbitmq"
+      - "RABBIT_PORT=5672"
+      - "RABBIT_USER=annet"
+      - "RABBIT_PWD=0707Anya"
+
+  sconsumer:
+    image: setup_consumer
+    container_name: setup_consumer
+    networks: 
+      - cloud
+    ports:
+      - 87:80
+    depends_on:
+      - database
+      - rabbitmq
+      - producer
+    environment:
+      - "SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/cultorg_helper"
+      - "SPRING_DATASOURCE_USERNAME=postgres"
+      - "SPRING_DATASOURCE_PASSWORD=07072001Anya"
+      - "RABBIT_HOST=rabbitmq"
+      - "RABBIT_PORT=5672"
+      - "RABBIT_USER=annet"
+      - "RABBIT_PWD=0707Anya"
+
+  tconsumer:
+    image: tehgroup_consumer
+    container_name: tehgroup_consumer
+    networks: 
+      - cloud
+    ports:
+      - 88:80
+    depends_on:
+      - database
+      - rabbitmq
+      - producer
+    environment:
+      - "SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/cultorg_helper"
+      - "SPRING_DATASOURCE_USERNAME=postgres"
+      - "SPRING_DATASOURCE_PASSWORD=07072001Anya"
+      - "RABBIT_HOST=rabbitmq"
+      - "RABBIT_PORT=5672"
+      - "RABBIT_USER=annet"
+      - "RABBIT_PWD=0707Anya"
+
+  database:
+    image:
+      postgres:13.3
+    container_name: database
+    networks:
+      - cloud
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: cultorg_helper
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 07072001Anya
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: "10m"
+
+  redis:
+    image:
+      redis-f
+    container_name: redis
+    networks:
+      - cloud
+    ports:
+      - 6380:6380
+    volumes:
+      - redis-volume:/data
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: "10m"
+
+
+  rabbitmq:
+    container_name: "rabbitmq"
+    networks:
+      - cloud
+    image: rabbitmq:3.8-management-alpine
+    environment:
+      - RABBITMQ_DEFAULT_USER=annet
+      - RABBITMQ_DEFAULT_PASS=0707Anya
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+
+volumes:
+  pgdata:
+    external: false
+  redis-volume:
+    external: false
+
+networks:
+  cloud:
+    external: false

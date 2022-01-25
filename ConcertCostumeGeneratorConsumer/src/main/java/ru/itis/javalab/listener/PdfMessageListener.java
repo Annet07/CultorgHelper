@@ -23,10 +23,6 @@ public class PdfMessageListener {
 
     @RabbitListener(queues = "concertCostumeQueue", containerFactory = "containerFactory")
     public Object onMessage(String message) throws IOException, DocumentException {
-        logger.info(message);
-        Gson gson = new Gson();
-        String reply = pdfService.getPdfFileForUser(gson.fromJson(message, InfoForConcertCostume.class));
-        logger.info(reply);
-        return reply;
+        return pdfService.getPdfFileForUser(message);
     }
 }

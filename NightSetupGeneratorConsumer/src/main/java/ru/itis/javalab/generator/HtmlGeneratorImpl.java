@@ -3,12 +3,12 @@ package ru.itis.javalab.generator;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
-import freemarker.template.TemplateExceptionHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import ru.itis.javalab.model.InfoForNightSetup;
 
 import java.io.*;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -17,14 +17,10 @@ import java.util.UUID;
 public class HtmlGeneratorImpl implements HtmlGenerator{
 
     @Autowired
-    private Configuration configuration = new Configuration(Configuration.VERSION_2_3_25);
+    private Configuration configuration;
 
     @Override
     public String getHtmlFile(InfoForNightSetup infoForNightSetup) throws IOException {
-        configuration.setDirectoryForTemplateLoading(new File("D:\\IDEA\\App_2021-2022\\NightSetupGeneratorConsumer\\src\\main\\resources\\templates"));
-        configuration.setDefaultEncoding("UTF-8");
-        configuration.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
-
         Template confirmMailTemplate;
         try{
             confirmMailTemplate = configuration.getTemplate("NightSetup.ftlh");
@@ -57,7 +53,7 @@ public class HtmlGeneratorImpl implements HtmlGenerator{
         attributes.put("first_letter_deputy_patronymic", firstLetterDeputyPatronymic);
 
         UUID name = UUID.randomUUID();
-        String path = "D:\\IDEA\\App_2021-2022\\NightSetupGeneratorConsumer\\src\\main\\resources\\html\\" + name + ".html";
+        String path = name + ".html";
         Writer writer = new OutputStreamWriter(new FileOutputStream(path));
         try {
             confirmMailTemplate.process(attributes, writer);

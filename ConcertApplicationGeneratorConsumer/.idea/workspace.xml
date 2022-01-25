@@ -4,7 +4,176 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75e5b6a5-95c7-4163-87c7-2ef039fcbc3f" name="Changes" comment="" />
+    <list default="true" id="75e5b6a5-95c7-4163-87c7-2ef039fcbc3f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Producer/.idea/noSqlSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Producer/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67e8db6b-a48e-4aaf-ba0c-6c358ea65eee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/67e8db6b-a48e-4aaf-ba0c-6c358ea65eee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67e8db6b-a48e-4aaf-ba0c-6c358ea65eee/storage_v2/_src_/database/javalab_app_rabbit_docker.M5GbYA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/67e8db6b-a48e-4aaf-ba0c-6c358ea65eee/storage_v2/_src_/database/javalab_app_rabbit_docker.M5GbYA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itis/javalab/generator/HtmlGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itis/javalab/generator/HtmlGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itis/javalab/generator/PdfGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itis/javalab/generator/PdfGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itis/javalab/listeners/PdfMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itis/javalab/listeners/PdfMessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itis/javalab/model/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itis/javalab/model/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itis/javalab/service/PdfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itis/javalab/service/PdfService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itis/javalab/service/PdfServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itis/javalab/service/PdfServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/html/2a379718-2a13-4ca5-898d-a4f065fd0d64.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/html/4cc19fbc-9c78-4aae-9203-01d184631fe9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/html/732516b7-d12c-4a75-bc48-7bbbe9570adf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/html/d901eb00-a0a0-4e69-a559-133525b8110a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/html/dcdd7d6e-61bc-45f5-a6b9-3579f2a11c66.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pdf/2a379718-2a13-4ca5-898d-a4f065fd0d64.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pdf/4cc19fbc-9c78-4aae-9203-01d184631fe9.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pdf/732516b7-d12c-4a75-bc48-7bbbe9570adf.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pdf/dcdd7d6e-61bc-45f5-a6b9-3579f2a11c66.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/html/2a379718-2a13-4ca5-898d-a4f065fd0d64.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/html/4cc19fbc-9c78-4aae-9203-01d184631fe9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/html/732516b7-d12c-4a75-bc48-7bbbe9570adf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/html/dcdd7d6e-61bc-45f5-a6b9-3579f2a11c66.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pdf/2a379718-2a13-4ca5-898d-a4f065fd0d64.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pdf/4cc19fbc-9c78-4aae-9203-01d184631fe9.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pdf/732516b7-d12c-4a75-bc48-7bbbe9570adf.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pdf/dcdd7d6e-61bc-45f5-a6b9-3579f2a11c66.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itis/javalab/generator/HtmlGeneratorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itis/javalab/generator/HtmlGeneratorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itis/javalab/generator/PdfGeneratorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itis/javalab/generator/PdfGeneratorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itis/javalab/listeners/PdfMessageListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itis/javalab/listeners/PdfMessageListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itis/javalab/model/Application$ApplicationBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itis/javalab/model/Application$ApplicationBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itis/javalab/model/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itis/javalab/model/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itis/javalab/service/PdfService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itis/javalab/service/PdfService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itis/javalab/service/PdfServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itis/javalab/service/PdfServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/java/ru/itis/javalab/generator/HtmlGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/java/ru/itis/javalab/generator/HtmlGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/java/ru/itis/javalab/generator/PdfGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/java/ru/itis/javalab/generator/PdfGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/java/ru/itis/javalab/listener/PdfMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/java/ru/itis/javalab/listener/PdfMessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/java/ru/itis/javalab/service/PdfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/java/ru/itis/javalab/service/PdfService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/java/ru/itis/javalab/service/PdfServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/java/ru/itis/javalab/service/PdfServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/resources/html/9fa3edf6-0c49-4266-a4f1-26f7ecb73a3f.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/resources/html/dc204ed5-1655-447a-b769-10a31f378d7b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/resources/pdf/363e35ba-582d-4b85-b58c-b826dfd1fc7b.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/resources/pdf/67c15f7d-ac31-4503-9669-f2a66f414ec9.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/resources/pdf/9fa3edf6-0c49-4266-a4f1-26f7ecb73a3f.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/resources/pdf/d52bbe1b-67f4-4319-91b0-1aa074feea6d.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/resources/pdf/d9743063-1991-4d4d-bcb9-acc42fe6272c.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/resources/pdf/dc204ed5-1655-447a-b769-10a31f378d7b.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/src/main/resources/pdf/eab26d5d-0959-4dad-b764-72a879293de7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/html/dc204ed5-1655-447a-b769-10a31f378d7b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/pdf/363e35ba-582d-4b85-b58c-b826dfd1fc7b.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/pdf/67c15f7d-ac31-4503-9669-f2a66f414ec9.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/pdf/d52bbe1b-67f4-4319-91b0-1aa074feea6d.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/pdf/d9743063-1991-4d4d-bcb9-acc42fe6272c.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/pdf/dc204ed5-1655-447a-b769-10a31f378d7b.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/pdf/eab26d5d-0959-4dad-b764-72a879293de7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/ru/itis/javalab/listener/PdfMessageListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/ru/itis/javalab/listener/PdfMessageListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/ru/itis/javalab/service/PdfService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/ru/itis/javalab/service/PdfService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/ru/itis/javalab/service/PdfServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcertCostumeGeneratorConsumer/target/classes/ru/itis/javalab/service/PdfServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/java/ru/itis/javalab/generator/HtmlGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/java/ru/itis/javalab/generator/HtmlGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/java/ru/itis/javalab/generator/PdfGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/java/ru/itis/javalab/generator/PdfGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/java/ru/itis/javalab/listeners/PdfMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/java/ru/itis/javalab/listeners/PdfMessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/java/ru/itis/javalab/service/PdfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/java/ru/itis/javalab/service/PdfService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/java/ru/itis/javalab/service/PdfServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/java/ru/itis/javalab/service/PdfServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/resources/html/8f0ee3de-80b3-4b9a-8e2e-f52b91e6ceb3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/resources/html/9ed799c4-a21d-46c1-93af-06663b4d99e1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/resources/html/dd20e4ac-44f7-45e4-b491-8e642ffb4899.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/resources/pdf/51a01427-6a9d-465e-84b9-197fd542b1e7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/resources/pdf/811e3ed1-6b7d-4e8a-9401-904b8dc299a8.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/resources/pdf/874a90b7-f073-453f-a525-2be0c3ca31a0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/resources/pdf/8f0ee3de-80b3-4b9a-8e2e-f52b91e6ceb3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/resources/pdf/9ed799c4-a21d-46c1-93af-06663b4d99e1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/resources/pdf/cd739803-6b5a-4d9f-aadc-42d1671eda9b.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/src/main/resources/pdf/dd20e4ac-44f7-45e4-b491-8e642ffb4899.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/html/dd20e4ac-44f7-45e4-b491-8e642ffb4899.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/pdf/51a01427-6a9d-465e-84b9-197fd542b1e7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/pdf/811e3ed1-6b7d-4e8a-9401-904b8dc299a8.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/pdf/874a90b7-f073-453f-a525-2be0c3ca31a0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/pdf/cd739803-6b5a-4d9f-aadc-42d1671eda9b.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/pdf/dd20e4ac-44f7-45e4-b491-8e642ffb4899.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/ru/itis/javalab/listeners/PdfMessageListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/ru/itis/javalab/listeners/PdfMessageListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/ru/itis/javalab/service/PdfService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/ru/itis/javalab/service/PdfService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/ru/itis/javalab/service/PdfServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NightSetupGeneratorConsumer/target/classes/ru/itis/javalab/service/PdfServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/controllers/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/controllers/TokenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/controllers/TokenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/dto/ConcertApplicationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/dto/ConcertApplicationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/dto/ConcertCostumeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/dto/ConcertCostumeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/dto/NightSetupDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/dto/NightSetupDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/dto/TehGroupDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/dto/TehGroupDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/dto/TokenDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/dto/TokenDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/entity/RefreshToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/entity/Tokens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/entity/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/entity/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/repository/TokenRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/security/config/SpringSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/security/config/SpringSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/security/details/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/security/details/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/security/token/AccessTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/security/token/AccessTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/security/token/TokenAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/security/token/TokenAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/service/SignUpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/service/SignUpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/service/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/service/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/service/TokenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/service/TokenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/java/ru/itis/javalab/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/resources/http/request.http" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/src/main/resources/http/request.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/src/main/resources/pdf/d901eb00-a0a0-4e69-a559-133525b8110a.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/http/request.http" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/http/request.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/controllers/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/controllers/FileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/controllers/TokenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/controllers/TokenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/ConcertApplicationDto$ConcertApplicationDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/ConcertApplicationDto$ConcertApplicationDtoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/ConcertApplicationDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/ConcertApplicationDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/ConcertCostumeDto$ConcertCostumeDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/ConcertCostumeDto$ConcertCostumeDtoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/ConcertCostumeDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/ConcertCostumeDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/NightSetupDto$NightSetupDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/NightSetupDto$NightSetupDtoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/NightSetupDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/NightSetupDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/TehGroupDto$TehGroupDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/TehGroupDto$TehGroupDtoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/TehGroupDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/TehGroupDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/TokenDto$TokenDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/TokenDto$TokenDtoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/TokenDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/dto/TokenDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/entity/RefreshToken$RefreshTokenBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/entity/RefreshToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/entity/Response$ResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/entity/Response$ResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/entity/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/entity/Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/entity/User$Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/entity/User$Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/entity/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/entity/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/repository/TokenRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/security/config/SpringSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/security/config/SpringSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/security/details/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/security/details/UserDetailsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/security/token/AccessTokenFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/security/token/AccessTokenFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/security/token/TokenAuthenticationProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/security/token/TokenAuthenticationProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/service/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/service/TokenService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/service/TokenServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/service/TokenServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Producer/target/classes/ru/itis/javalab/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/java/ru/itis/javalab/generator/HtmlGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/java/ru/itis/javalab/generator/HtmlGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/java/ru/itis/javalab/generator/PdfGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/java/ru/itis/javalab/generator/PdfGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/java/ru/itis/javalab/lestener/PdfMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/java/ru/itis/javalab/lestener/PdfMessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/java/ru/itis/javalab/service/PdfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/java/ru/itis/javalab/service/PdfService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/java/ru/itis/javalab/service/PdfServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/java/ru/itis/javalab/service/PdfServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/resources/html/81b5410e-ee20-478c-a79d-580e5302091d.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/resources/html/8b42ba80-d8b8-44b7-a036-e0e2cebb8e0e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/resources/pdf/15b3d1d1-cad2-4c4b-890d-66b296cb384f.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/resources/pdf/1b6af0ba-3da6-4904-8b1f-361bbf38b0db.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/resources/pdf/81b5410e-ee20-478c-a79d-580e5302091d.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/src/main/resources/pdf/8b42ba80-d8b8-44b7-a036-e0e2cebb8e0e.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/target/classes/html/8b42ba80-d8b8-44b7-a036-e0e2cebb8e0e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/target/classes/pdf/15b3d1d1-cad2-4c4b-890d-66b296cb384f.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/target/classes/pdf/1b6af0ba-3da6-4904-8b1f-361bbf38b0db.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/target/classes/pdf/8b42ba80-d8b8-44b7-a036-e0e2cebb8e0e.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/target/classes/ru/itis/javalab/lestener/PdfMessageListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/target/classes/ru/itis/javalab/lestener/PdfMessageListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/target/classes/ru/itis/javalab/service/PdfService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/target/classes/ru/itis/javalab/service/PdfService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/target/classes/ru/itis/javalab/service/PdfServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TehGroupGeneratorConsumer/target/classes/ru/itis/javalab/service/PdfServiceImpl.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +187,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -27,6 +199,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="23qFZVt4Lsw6vnUeUcUFmdK1Zmf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -96,14 +269,44 @@
       <workItem from="1642780180926" duration="38630000" />
       <workItem from="1642942351067" duration="619000" />
       <workItem from="1642971980650" duration="553000" />
-      <workItem from="1643013739339" duration="8907000" />
+      <workItem from="1643013739339" duration="10138000" />
+      <workItem from="1643033689737" duration="400000" />
+      <workItem from="1643034138951" duration="5526000" />
+      <workItem from="1643063391703" duration="439000" />
+      <workItem from="1643065355437" duration="505000" />
+      <workItem from="1643066330157" duration="7211000" />
+      <workItem from="1643080581776" duration="339000" />
+      <workItem from="1643081444720" duration="63000" />
+      <workItem from="1643082135718" duration="121000" />
+      <workItem from="1643082282289" duration="7742000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itis/javalab/generator/HtmlGeneratorImpl.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="renderer.setDocument(htmlFileToString)" language="JAVA" />

@@ -13,7 +13,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Component;
-import ru.itis.javalab.entity.RefreshToken;
+import ru.itis.javalab.entity.Tokens;
 import ru.itis.javalab.entity.User;
 import ru.itis.javalab.security.details.UserDetailsImpl;
 import ru.itis.javalab.service.TokenService;
@@ -47,9 +47,10 @@ public class TokenAuthenticationProvider implements AuthenticationProvider {
         }
         String refreshToken = tokenAuthentication.getRefreshToken();
         if (refreshToken != null){
-            Optional<RefreshToken> token = tokenService.getRefreshToken(refreshToken);
-            if (!(token.isPresent() && token.get().getUser().getEmail().equals(userDetails.getUsername())
-                    && token.get().getExpiredTime().compareTo(new Date()) > 0)){
+            Tokens token = tokenService.getRefreshToken(refreshToken);
+            Optional<User> user = tokenService.getUserByRefreshToken(refreshToken);
+            if (!(token != null && user.isPresent() && user.get().getEmail().equals(userDetails.getUsername())
+                    && token.getExpiredTimeRefreshToken().compareTo(new Date()) > 0)){
                 throw new IllegalAccessError("Refresh Token устарел. Войдите в системы заново, чтобы обновить токены!");
             }
         }

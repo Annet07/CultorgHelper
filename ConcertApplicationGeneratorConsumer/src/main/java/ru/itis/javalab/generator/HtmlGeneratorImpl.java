@@ -3,16 +3,11 @@ package ru.itis.javalab.generator;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
-import freemarker.template.TemplateExceptionHandler;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import ru.itis.javalab.listeners.PdfMessageListener;
 import ru.itis.javalab.model.InfoForApplication;
-
 import java.io.*;
-import java.nio.charset.StandardCharsets;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -20,13 +15,11 @@ import java.util.UUID;
 @Component
 public class HtmlGeneratorImpl implements HtmlGenerator{
 
-    private final Configuration configuration = new Configuration(Configuration.VERSION_2_3_25);
+    @Autowired
+    private Configuration configuration;
 
     @Override
     public String getHtmlFile(InfoForApplication infoForApplication) throws IOException {
-        configuration.setDirectoryForTemplateLoading(new File("D:\\IDEA\\App_2021-2022\\ConcertApplicationGeneratorConsumer\\src\\main\\resources\\templates"));
-        configuration.setDefaultEncoding("UTF-8");
-        configuration.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
         Template confirmMailTemplate;
         try{
             confirmMailTemplate = configuration.getTemplate("ConcertApplication.ftlh");
@@ -65,7 +58,7 @@ public class HtmlGeneratorImpl implements HtmlGenerator{
         attributes.put("first_letter_deputy_patronymic", firstLetterDeputyPatronymic);
 
         UUID name = UUID.randomUUID();
-        String path = "D:\\IDEA\\App_2021-2022\\ConcertApplicationGeneratorConsumer\\src\\main\\resources\\html\\" + name + ".html";
+        String path = name + ".html";
         Writer writer = new OutputStreamWriter(new FileOutputStream(path));
         try {
             confirmMailTemplate.process(attributes, writer);
